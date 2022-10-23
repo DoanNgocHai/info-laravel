@@ -14,7 +14,7 @@ use App\Http\Controllers\InfoController;
 |
 */
 
-Route::get('/info', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('/info', InfoController::class);

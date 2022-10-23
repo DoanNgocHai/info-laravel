@@ -4,18 +4,24 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Info; 
+use DD;
 class InfoController extends Controller
+
 {
 
     public function index()
     {
         $information = Info::all();
         return view ('info.index')->with('info', $information);
+
+    
     }
     
     public function create()
     {
         return view('info.create');
+
+      
         
     }
   
